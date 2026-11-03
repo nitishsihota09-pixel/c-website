@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSWER</title>
+  </head>
+  <body style="background-color: antiquewhite; ">
+    
+    
+      <h4 id="ans1">Answer 1</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void addition()
+{
+    int num1, num2;
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    printf("addition:- %d\n", num1 + num2);
+}
+
+void subtract()
+{
+    int num1, num2;
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    printf("subtraction:- %d\n", num1 - num2);
+}
+
+void multiply()
+{
+    int num1, num2;
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    printf("multiplication:- %d\n", num1 * num2);
+}
+
+void divide()
+{
+    int num1, num2;
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    printf("division:- %d\n", num1 / num2);
+}
+
+void main()
+{
+    clrscr();
+
+    addition();
+    subtract();
+    addition();
+    multiply();
+    subtract();
+    multiply();
+    divide();
+    divide();
+    addition();
+
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter num1 :- 10
+enter num2 :- 5
+addition:- 15
+
+enter num1 :- 10
+enter num2 :- 5
+subtraction:- 5
+
+enter num1 :- 10
+enter num2 :- 5
+addition:- 15
+
+enter num1 :- 10
+enter num2 :- 5
+multiplication:- 50
+
+enter num1 :- 10
+enter num2 :- 5
+subtraction:- 5
+
+enter num1 :- 10
+enter num2 :- 5
+multiplication:- 50
+
+enter num1 :- 10
+enter num2 :- 5
+division:- 2
+
+enter num1 :- 10
+enter num2 :- 5
+division:- 2
+
+enter num1 :- 10
+enter num2 :- 5
+addition:- 15
+      </pre>
+    
+
+    
+      <h4 id="ans2">Answer 2</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main()
+{
+    int num[10], i, total=0;
+    clrscr();
+
+    printf("enter ten numbers :- ");
+
+    for(i=0; i<=9; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+
+    for(i=0; i<=9; i++)
+    {
+        total = total + num[i];
+    }
+
+    printf("Total of the numbers :- %d", total);
+
+}
+
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter ten numbers :-
+1 2 3 4 5 6 7 8 9 10
+
+Total of the numbers :- 55        
+      </pre>
+    
+
+
+      <h4 id="ans3">Answer 3</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+int* array()
+{
+    static int arr[5] = {10,20,30,40,50};
+    return arr;
+ }
+
+void main()
+{
+    int *p,i;
+
+    clrscr();
+
+    p=array();
+    printf("Array elements are:\n");
+
+    for(i=0;i&lt;5;i++)
+    {
+        printf("%d\t",p[i]);
+    }
+  }
+      </pre>
+      <b>Output :</b>
+      <pre>
+Array elements are:
+10      20      30      40      50
+      </pre>
+
+        
+
+
+    
+      <h4 id="ans5">Answer 4</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void change(int *num3, int *num4)
+{
+    int value;
+    value = *num3;
+    *num3 = *num4;
+    *num4 = value;
+}
+
+void main()
+{
+    int num1, num2;
+    clrscr();
+
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    change(&num1, &num2);
+
+    printf("change1 :- %d, change2 :- %d", num1, num2);
+    
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter num1 :- 10
+enter num2 :- 20
+
+change1 :- 20, change2 :- 10        
+      </pre>
+    
+
+    
+      <h4 id="ans6">Answer 5</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void change(int num3, int num4)
+{
+    int value;
+    value = num3;
+    num3 = num4;
+    num4 = value;
+
+    printf("change1 :- %d, change2 :- %d", num3, num4);
+}
+
+void main()
+{
+    int num1, num2;
+    clrscr();
+
+    printf("enter num1 :- ");
+    scanf("%d", &num1);
+
+    printf("enter num2 :- ");
+    scanf("%d", &num2);
+
+    change(num1, num2);
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+ enter num1 :- 10
+ enter num2 :- 20
+ change1 :- 20, change2 :- 10
+      </pre>
+    
+    
+    
+      <h4 id="ans7">Answer 6</h4>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void calculate(int num1, int num2)
+{
+    int i, value=1;
+
+    for(i=1; i<=num2; i++)
+    {
+        value = value * num1;
+    }
+
+    printf("%d", value);
+}
+
+void main()
+{
+    int number, power;
+    clrscr();
+
+    printf("enter the number :- ");
+    scanf("%d", &number);
+
+    printf("enter the power :- ");
+    scanf("%d", &power);
+
+    calculate(number, power);
+
+}
+    
+</pre>
+      <b>Output :</b>
+      <pre>
+enter the number :- 2
+enter the power :- 3
+8
+      </pre>
+   
+
+    
+      <h4 id="ans8">Answer 7</h4>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void cube(int num)
+{
+    int cube;
+    cube = num * num * num;
+    printf("%d", cube);
+}
+
+void main()
+{
+    int number;
+    clrscr();
+
+    printf("enter a number :- ");
+    scanf("%d", &number);
+
+    cube(number);
+    
+}</pre>
+      <b>Output :</b>
+      <pre>
+enter a number :- 5
+125
+      </pre>
+    
+
+
+</body>
+</html>

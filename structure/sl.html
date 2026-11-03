@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSWER</title>
+  </head>
+ <body style="background-color: antiquewhite; ">
+    
+
+      <h4 id="ans1">Answer 1</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+  struct employees
+{
+    int employeeid;
+    char employeename[60];
+    char employeedesignation[20];
+}emp[50];
+
+void main()
+{
+   
+    int i;
+
+    clrscr();
+
+    for(i=0;i<=49;i++)
+    {
+        printf("Enter details of employees %d :-\n ",i+1);
+
+        printf("Enter Employee ID: ");
+        scanf("%d",&emp[i].employeeid);
+
+        printf("Enter Name: ");
+        scanf("%s",emp[i].employeename);
+
+        printf("Enter Designation: ");
+        scanf("%s",emp[i].employeedesignation);
+    }
+
+    printf("Employee Details\n");
+    printf("EMPLOYEE ID\tName\tDesignation\n");
+
+    for(i=0;i<=49;i++)
+    {
+        printf("%d\t%s\t%s\n",
+        emp[i].employeeid,emp[i].employeename,emp[i].employeedesignation);
+    }
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>Enter details of employee 1 :-
+Enter Employee ID: 1
+Enter Name: Arayan
+Enter Designation: Manager
+
+Enter details of employee 2 :-
+Enter Employee ID: 2
+Enter Name: Sumit
+Enter Designation: Clerk
+
+Enter details of employee 3 :-
+Enter Employee ID: 3
+Enter Name: Ravi
+Enter Designation: Accountant
+
+...
+
+Enter details of employee 50
+Enter Employee ID: 50
+Enter Name: Shubham
+Enter Designation: Clerk
+
+Employee Details
+EMPLOYEE ID    Name       Designation
+1              Arayan      Manager
+2              Sumit       Clerk
+3              Ravi       Accountant
+...
+50             Shubham    Clerk</pre>
+    
+
+    
+      <h4 id="ans2">Answer 2</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+struct employees
+{
+    int employeeid;
+    char employeename[30];
+    char employeedesignation[30];
+}emp[50];
+
+void main()
+{
+   
+    int i;
+
+    clrscr();
+
+    for(i=0;i<=49;i++)
+    {
+        printf("Enter details of employees %d :-\n ",i+1);
+
+        printf("Enter Employee ID: ");
+        scanf("%d",&emp[i].employeeid);
+
+        printf("Enter Name: ");
+        scanf("%s",emp[i].employeename);
+
+        printf("Enter Designation: ");
+        scanf("%s",emp[i].employeedesignation);
+    }
+
+   
+    printf("Names of Employees\n");
+
+    for(i=0;i<=49;i++)
+    {
+        printf("%s",emp[i].empname);
+        printf("\n");
+    }
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+Enter details of employee 1 :-
+Enter Employee ID: 1
+Enter Name: Arayan
+Enter Designation: Manager
+
+Enter details of employee 2 :-
+Enter Employee ID: 2
+Enter Name: Sumit
+Enter Designation: Clerk
+
+Enter details of employee 3 :-
+Enter Employee ID: 3
+Enter Name: Ravi
+Enter Designation: Accountant
+
+...
+
+Enter details of employee 50
+Enter Employee ID: 50
+Enter Name: Shubham
+Enter Designation: Clerk
+
+Names of Employees
+Arayan
+Sumit
+Ravi
+...
+Shubham     
+      </pre>
+    
+
+
+      <h4 id="ans3">Answer 3</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+struct employees
+{
+    int employeeid;
+    char employeename[30];
+    char employeedesignation[30];
+}emp[50];
+
+void main()
+{
+   
+    int i;
+
+    clrscr();
+
+    for(i=0;i<=49;i++)
+    {
+        printf("Enter details of employees %d :-\n ",i+1);
+
+        printf("Enter Employee ID: ");
+        scanf("%d",&emp[i].employeeid);
+
+        printf("Enter Name: ");
+        scanf("%s",emp[i].employeename);
+
+        printf("Enter Designation: ");
+        scanf("%s",emp[i].employeedesignation);
+    }
+
+
+    printf("Employee ID\tName\n");
+
+    for(i=0;i<=49;i++)
+    {
+        printf("%d\t\t%s\n",emp[i].empid,emp[i].empname);
+    }
+
+  }
+      </pre>
+      <b>Output :</b>
+      <pre>
+Enter details of employee 1 :-
+Enter Employee ID: 1
+Enter Name: Arayan
+Enter Designation: Manager
+
+Enter details of employee 2 :-
+Enter Employee ID: 2
+Enter Name: Sumit
+Enter Designation: Clerk
+
+Enter details of employee 3 :-
+Enter Employee ID: 3
+Enter Name: Ravi
+Enter Designation: Accountant
+
+...
+
+Enter details of employee 50
+Enter Employee ID: 50
+Enter Name: Shubham
+Enter Designation: Clerk
+
+Employee ID      Name
+1                Arayan
+2                Sumit
+3                Ravi
+...
+50               Shubham        
+      </pre>
+    
+
+    
+
+    </body>
+    </html>
+    

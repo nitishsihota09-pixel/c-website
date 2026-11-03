@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSWER</title>
+  </head>
+  <body style="background-color: antiquewhite; ">
+
+    
+    
+      <h4 id="ans1">Answer 1</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+     int arr[5], i;
+    clrscr();
+
+    for(i=0; i&lt;4; i++)
+    {
+        printf("enter the values :-");
+        scanf("%d", &arr[i]);
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        printf("%d", arr[i]);
+    }
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter the values :- 10
+enter the values :- 20
+enter the values :- 30
+enter the values :- 40
+enter the values :- 50
+
+10 20 30 40 50 
+      </pre>
+    
+
+    
+      <h4 id="ans2">Answer 2</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int arr[5], i;
+    clrscr();
+
+    for(i=0; i<=4; i++)
+    {
+        printf("enter the values :-");
+        scanf("%d", &arr[i]);
+    }
+
+    for(i=4; i>=0; i--)
+    {
+        printf("%d", arr[i]);
+    }
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter the values :- 10
+enter the values :- 20
+enter the values :- 30
+enter the values :- 40
+enter the values :- 50
+
+50 40 30 20 10
+      </pre>
+    
+
+    
+      <h4 id="ans3">Answer 3</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int array1[5], array2[5], i;
+    clrscr();
+
+    printf("enter five values :- ");
+
+    for(i=0; i<=4; i++)
+    {
+        scanf("%d", &array1[i]);
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        array2[i] = array1[i];
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        printf("%d", array2[i]);
+    }
+  
+  }
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter five values :- 10 20 30 40 50
+
+10 20 30 40 50
+      </pre>
+    
+
+    
+      <h4 id="ans4">Answer 4</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int array1[5], array2[5], i;
+    clrscr();
+
+    printf("enter five values :- ");
+
+    for(i=0; i<=4; i++)
+    {
+        scanf("%d", &array1[i]);
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        array2[i] = array1[i];
+    }
+
+    for(i=4; i>=0; i--)
+    {
+        printf("%d", array2[i]);
+    }
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre> 
+enter five values :- 10 20 30 40 50
+
+50 40 30 20 10
+      </pre>
+    
+
+    
+      <h4 id="ans5">Answer 5</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int even[5], i;
+    clrscr();
+
+    printf("enter values :-");
+
+    for(i=0; i<=4; i++)
+    {
+        scanf("%d", &even[i]);
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        if(even[i] % 2 == 0)
+        {
+            printf("%d", even[i]);
+        }
+    }
+  
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter values :- 2 5 8 9 10
+
+2 8 10
+</pre>
+    
+
+    
+      <h4 id="ans6">Answer 6</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int positive[5], i;
+    clrscr();
+
+    printf("enter values :-");
+
+    for(i=0; i<=4; i++)
+    {
+        scanf("%d", &positive[i]);
+    }
+
+    for(i=0; i<=4; i++)
+    {
+        if(positive[i] > 0)
+        {
+            printf("%d", positive[i]);
+        }
+    }
+  
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter values :- 5 -2 8 -7 10
+
+5 8 10
+      </pre>
+  
+    
+    
+      <h4 id="ans7">Answer 7</h4>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int arr[5],i;
+    clrscr();
+
+    for(i=0;i<=4;i++)
+    {
+        printf("enter the values :-");
+        scanf("%d",&arr[i]);
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        printf("%d",arr[i]*arr[i]);
+    }
+}
+    
+</pre>
+      <b>Output :</b>
+      <pre>
+enter the values :- 2 3 4 5 6
+
+4 9 16 25 36
+      </pre>
+  
+    
+   
+      <h4 id="ans8">Answer 8</h4>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int odd[5],i;
+    clrscr();
+
+    printf("enter five values :-");
+
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&odd[i]);
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        if(odd[i]%2!=0)
+        {
+            printf("%d",odd[i]);
+        }
+    }
+}</pre>
+      <b>Output :</b>
+      <pre>
+enter five values :- 2 5 8 9 11
+
+5 9 11        
+      </pre>
+    
+
+      <h4 id="ans9">Answer 9</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int arr[5],i,total=0;
+    clrscr();
+
+    printf("enter five values :-");
+
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        total=total+arr[i];
+    }
+
+    printf("%d",total);
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter five values :- 2 4 6 8 10
+
+30        
+      </pre>
+   
+    
+   
+      <h4 id="ans10">Answer 10</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int program[5],i,value;
+    clrscr();
+
+    printf("enter five values :-");
+
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&program[i]);
+    }
+
+    printf("enter a value :-");
+    scanf("%d",&value);
+
+    for(i=0;i<=4;i++)
+    {
+        if(value==program[i])
+        {
+            printf("value found");
+            break;
+        }
+    }
+
+    if(i==5)
+    {
+        printf("value not found");
+    }  
+}</pre>
+      <b>Output :</b>
+      <pre>
+enter five values :- 10 20 30 40 50
+enter a value :- 30
+
+value found
+      </pre>
+  
+    
+   
+      <h4 id="ans11">Answer 11</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int array[5],i,j,value;
+    clrscr();
+
+    printf("enter five values :-");
+
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&array[i]);
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        for(j=i;j<=4;j++)
+        {
+            if(array[i]>array[j])
+            {
+                value=array[i];
+                array[i]=array[j];
+                array[j]=value;
+            }
+        }
+    }
+
+    for(i=0;i<=4;i++)
+    {
+        printf("%d",array[i]);
+    }
+ 
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter five values :- 8 3 10 2 5
+
+2 3 5 8 10
+      </pre>
+ 
+
+   
+      <h4 id="ans12">Answer 12</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int a[4]={12,5,8,51},i,highest=0;
+    clrscr();
+
+    for(i=0;i<=3;i++)
+    {
+        if(a[i]>highest)
+        {
+            highest=a[i];
+        }
+    }
+
+    printf("maximum value :- %d",highest);  
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+maximum value :- 51        
+      </pre>
+
+
+       
+      <h4 id="ans13">Answer 13</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int a[4]={12,5,1,51},i,minimum;
+    clrscr();
+
+    for(i=0;i<=3;i++)
+    {
+        if(a[i]&lt;minimum)
+        {
+            minimum=a[i];
+        }
+    }
+
+    printf("minimum value :- %d",minimum);
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+minimum value :- 1
+      </pre>
+    
+
+    </body>
+    </html>
+    

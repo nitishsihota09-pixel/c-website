@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSWER</title>
+  </head>
+  <body style="background-color: antiquewhite; ">
+
+    
+  
+      <h4 id="ans1">Answer 1</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+  char upper[20];
+  int i,size;
+  clrscr();
+  printf("enter the string :- ");
+  gets(upper);
+  size=strlen(upper);
+  for(i=0;i&lt;size;i++){
+     if(upper[i]>='a'&&upper[i]<='z'){
+      upper[i]=upper[i]-32;
+     }}
+     printf("%s",upper);
+  }
+
+      </pre>
+      <b>Output :</b>
+      <pre>
+Enter the string :- hello world
+HELLO WORLD            
+      </pre>
+    
+
+      <h4 id="ans2">Answer 2</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+  char lower[20];
+  int i,size;
+  clrscr();
+  printf("enter the string :- ");
+  gets(lower);
+  size=strlen(lower);
+  for(i=0;i&lt;size;i++){
+     if(lower[i]>='A'&&lower[i]<='Z'){
+      lower[i]=lower[i]+32;
+     }}
+     printf("%s",lower);
+}
+      </pre>
+      <b>Output :</b>
+      <pre>Enter the string :- HELLO WORLD
+hello world</pre>
+  
+
+
+      <h4 id="ans3">Answer 3</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+    char sent[20];
+    int i,size;
+
+    clrscr();
+
+    printf("Enter the string :- ");
+    gets(sent);
+
+    size=strlen(sent);
+
+    if(sent[0]>='a' && sent[0]<='z')
+    {
+        sent[0]=sent[0]-32;
+    }
+
+    for(i=1;i&lt;size;i++)
+    {
+        if(sent[i]>='A' && sent[i]<='Z')
+        {
+            sent[i]=sent[i]+32;
+        }
+    }
+
+    printf("%s",sent);
+  }
+      </pre>
+      <b>Output :</b>
+      <pre>
+Enter the string :- hELLO
+Hello
+      </pre>
+
+
+
+      <h4 id="ans5">Answer 4</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main()
+{
+   char toggle[20];
+    int i,size;
+
+    clrscr();
+
+    printf("Enter the string :- ");
+    gets(toggle);
+
+    size=strlen(toggle);
+
+    for(i=0;i&lt;size;i++)
+    {
+        if(toggle[i]>='a' && toggle[i]<='z')
+        {
+            toggle[i]=toggle[i]-32;
+        }
+        else if(toggle[i]>='A' && toggle[i]<='Z')
+        {
+            toggle[i]=toggle[i]+32;
+        }
+    }
+
+    printf("%s",toggle);
+  
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+Enter the string :- HeLLo WoRLd
+hEllO wOrlD
+</pre>
+
+
+    
+      <h4 id="ans6">Answer 5</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+
+void main()
+{
+    char length[100];
+    int x;
+    clrscr();
+
+    printf("enter the string :- ");
+    gets(length);
+
+    x=strlen(length);
+
+    printf("length of the string :- %d",x);
+    
+}
+      </pre>
+      <b>Output :</b>
+      <pre>enter the string :- Hello
+length of the string :- 5</pre>
+   
+
+
+      <h4 id="ans7">Answer 6</h4>
+      <pre>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+
+void main()
+{
+    char str1[20],str2[20];
+    int x;
+    clrscr();
+
+    printf("enter the first string :- ");
+    gets(str1);
+
+    printf("enter the second string :- ");
+    gets(str2);
+
+    x=strcmp(str1,str2);
+
+    printf("final value after comparing :- %d",x);
+
+}
+    
+</pre>
+      <b>Output :</b>
+      <pre>enter the first string :- Hello
+enter the second string :- Hello
+final value after comparing :- 0</pre>
+
+    
+
+
+    
+      <h4 id="ans8">Answer 7</h4>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+    char str1[20],str2[20];
+    clrscr();
+
+    printf("enter first string :- ");
+    gets(str1);
+
+    printf("enter second string :- ");
+    gets(str2);
+
+    strcat(str1,str2);
+
+    printf("final answer :- %s",str1);
+}</pre>
+      <b>Output :</b>
+      <pre>
+enter first string :- Hello
+enter second string :- World
+final answer :- HelloWorld        
+    </pre>
+
+   
+
+      <h4 id="ans9">Answer 8</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+  char str1[20],str2[20];
+    clrscr();
+
+    printf("enter first string :- ");
+    gets(str1);
+
+    printf("enter second string :- ");
+    gets(str2);
+
+    strcpy(str1,str2);
+
+    printf("final answer :- %s",str1);
+}
+      </pre>
+      <b>Output :</b>
+      <pre>enter first string :- Hello
+enter second string :- World
+final answer :- World</pre>
+    
+
+
+      <h4 id="ans10">Answer 9</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+    char str[50];
+    int number,size;
+    clrscr();
+
+    printf("enter the string :- ");
+    gets(str);
+
+    printf("enter a number :- ");
+    scanf("%d",&number);
+
+    size=strlen(str);
+
+    if(number>=0 && number&lt;size)
+    {
+        printf("%c",str[number]);
+    }
+    else
+    {
+        printf("out of bound");
+    }
+}</pre>
+      <b>Output :</b>
+      <pre>
+enter the string :- Computer
+enter a number :- 2
+m        
+      </pre>
+   
+
+
+      <h4 id="ans11">Answer 10</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+   char str[100];
+    int size,i;
+    clrscr();
+
+    printf("enter the string :- ");
+    gets(str);
+
+    size=strlen(str);
+
+    for(i=0;i&lt;size;i++)
+    {
+        printf("%c",str[i]);
+        printf("\n");
+    }   
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter the string :- Hello
+
+H
+e
+l
+l
+o
+      </pre>
+  
+
+
+      <h4 id="ans14">Answer 11</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+  char str[50],value;
+  int i,size;
+  clrscr();
+  printf("Enter the string :- ");
+  gets(str);
+  printf("Enter the character :- ");
+  scanf("%c",&value);
+  size=strlen(str);
+  for(i=0;i&lt;size;i++){
+      if(Value==str[i]){
+      break;
+      }
+  }
+  if(i&lt;size){
+    printf("value Exist");
+  }else{
+     printf("Value not Exist");
+  }
+}
+      </pre>
+      <b>Output :</b>
+      <pre>Enter the string :- Hello
+Enter the character :- e
+Value Exist</pre>
+   
+
+
+      <h4 id="ans15">Answer 12</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+   char str[50],value;
+    int i,size;
+    clrscr();
+
+    printf("enter the string :- ");
+    gets(str);
+
+    printf("enter the character :- ");
+    scanf("%c",&value);
+
+    size=strlen(str);
+
+    for(i=0;i&lt;size;i++){
+        if(value==str[i]){
+            break;
+        }
+    }
+
+    if(i&lt;size){
+        printf("found at index :- %d",i);
+    }else{
+        printf("value not exist");
+    }
+  }
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter the string :- Hello
+enter the character :- e
+found at index :- 1            
+      </pre>
+   
+
+
+
+      <h4 id="ans17">Answer 13</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+    char str[50],value;
+    int i,size;
+    clrscr();
+
+    printf("enter the string :- ");
+    gets(str);
+
+    printf("enter the bound number :- ");
+    scanf("%d",&value);
+
+    size=strlen(str);
+
+    if(value>=0 && value&lt;size){
+        printf("the character at number is :- %c",str[value]);
+    }else{
+        printf("value not exist");
+    }   
+
+}
+      </pre>
+      <b>Output :</b>
+      <pre>
+enter the string :- Hello
+enter the bound number :- 2
+the character at number is :- l
+      <pre>
+
+</pre>
+    
+
+
+      <h4 id="ans19">Answer 14</h4>
+      <pre>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+void main()
+{
+    char name[20];
+    int roll,cls,marks[5],i,j;
+    clrscr();
+
+    for(j=1;j<=5;j++){
+        printf("enter the name :- ");
+        fflush(stdin);
+        gets(name);
+
+        printf("enter the roll no :- ");
+        scanf("%d",&roll);
+
+        printf("enter the class :- ");
+        scanf("%d",&cls);
+
+        printf("enter five subject marks :- ");
+
+        for(i=0;i<=4;i++){
+            scanf("%d",&marks[i]);
+        }
+    }
+
+}
+    
+</pre>
+      <b>Output :</b>
+      <pre>
+enter the name :- Rahul
+enter the roll no :- 101
+enter the class :- 12
+enter five subject marks :-
+80 75 85 90 70
+
+enter the name :- Aman
+enter the roll no :- 102
+enter the class :- 12
+enter five subject marks :-
+70 80 75 85 90            
+      </pre>
+    
+
+    </body>
+    </html>
+    
+    

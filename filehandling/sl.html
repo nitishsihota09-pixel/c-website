@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSWER</title>
+  </head>
+  <body style="background-color: antiquewhite; ">
+
+    
+      <h4 id="ans1">Answer 1</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    char filename[20],information[50];
+    FILE *f;
+
+    clrscr();
+
+    printf("Enter The Name Of File :- ");
+    gets(filename);
+
+    f=fopen(filename,"w");
+
+    printf("Enter Information In File :- ");
+    gets(information);
+
+    fputs(information,f);
+
+    fclose(f);
+}
+      </pre>
+      <b>Output :</b>
+      <pre>        
+Enter The Name Of File :- student
+Enter Information In File :- Hello World
+
+FILE OUTPUT :- Hello World
+      </pre>
+      
+
+
+      <h4 id="ans2">Answer 2</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+   char data1[30]="info1";
+    char data2[30]="info2";
+
+    FILE *f,*f1,*f2;
+
+    clrscr();
+
+    f=fopen("project1","w");
+    fputs(info1,f);
+
+    f1=fopen("project2","w");
+    fputs(info2,f1);
+
+    f2=fopen("project3","w");
+
+    strcat(info1,info2);
+
+    fprintf(f2,"%s",info1);
+
+    fclose(f);
+    fclose(f1);
+    fclose(f2); 
+}
+      </pre>
+      <b>Output :</b>
+      <pre>        
+Project1 = Hello
+Project2 = World
+Project3 = HelloWorld
+      </pre>
+
+      
+
+      <h4 id="ans3">Answer 3</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+   char filename[30],information[50];
+    int i,size;
+
+    FILE *f1;
+
+    clrscr();
+
+    printf("Enter the name of file :- ");
+    gets(filename);
+
+    f=fopen(filename,"w");
+
+    printf("Enter information :- ");
+    gets(information);
+
+    size=strlen(information);
+
+    fprintf(f1,"%d",size);
+
+    fclose(f1);
+ 
+}
+      </pre>
+      <b>Output :</b>
+      <pre>        
+Enter the name of file :- student
+Enter information :- Hello World
+
+FILE OUTPUT :- 11
+      </pre>
+
+
+
+      <h4 id="ans4">Answer 4</h4><br>
+      <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+   char filename[30],information[50];
+    int i,size;
+
+    FILE *f1;
+
+    clrscr();
+
+    printf("Enter the name of file :- ");
+    gets(filename);
+
+    f=fopen(name,"w");
+
+    printf("Enter information :- ");
+    gets(information);
+
+    size=strlen(information);
+
+    for(i=0;i<=size;i++)
+    {
+        if(information[i]>='a' && information[i]<='z')
+        {
+            information[i]=information[i]-32;
+        }
+    }
+
+    fprintf(f1,"%s",information);
+
+    fclose(f1);
+ 
+}
+      </pre>
+      <b>Output :</b>
+      <pre>        
+Enter the name of file :- student
+Enter information :- hello world
+
+FILE OUTPUT :- HELLO WORLD
+      </pre>
+     </body>   
+
+</html>
